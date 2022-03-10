@@ -1,0 +1,15 @@
+kind: Ingress
+metadata:
+  name: my-ingress
+  namespace: myns
+spec:
+  rules:
+  - host: whatever.example.com
+    http:
+      paths:
+      - backend:
+          serviceName: my-service
+          servicePort: 80
+  tls:
+  - hosts:
+    - whatever.example.com
