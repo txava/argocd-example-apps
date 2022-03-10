@@ -17,3 +17,7 @@ spec:
   tls:
   - hosts:
     - whatever.example.com
+status:
+  loadBalancer:
+    ingress:
+    - {}
